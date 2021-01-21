@@ -1,0 +1,42 @@
+.test {
+ text-align: center;
+}
+
+img {
+  width: 5%;
+}
+
+.text {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+@keyframes grid-item {
+  from {background-color: red}
+  to {background-color: yellow}
+}
+
+.grid-item:focus {
+  animation-name: grid-item;
+  animation-duration: 2s;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
